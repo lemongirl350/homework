@@ -1,0 +1,1 @@
+[{"uid":"6af0f50c3df31982","name":"Проверка надписей в незаполненных полях","time":{"start":1716408582177,"stop":1716408590481,"duration":8304},"status":"passed","severity":"normal"},{"uid":"a1eefa04d65ab673","name":"Проверка оплаты за Услуги связи","time":{"start":1716408590658,"stop":1716408601753,"duration":11095},"status":"passed","severity":"critical"}]

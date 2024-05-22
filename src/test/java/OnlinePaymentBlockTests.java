@@ -1,7 +1,6 @@
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
+import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -26,6 +25,8 @@ public class OnlinePaymentBlockTests {
         }
 
         @Test
+        @DisplayName("Проверка надписей в незаполненных полях")
+        @Severity(SeverityLevel.NORMAL)
         public void testTextEmptyFields() {
             //Принимаем куки
             WebElement buttonCookie = driver.findElement(By.xpath("//button[@id='cookie-agree']"));
@@ -73,6 +74,8 @@ public class OnlinePaymentBlockTests {
         }
 
         @Test
+        @DisplayName("Проверка оплаты за Услуги связи")
+        @Severity(SeverityLevel.CRITICAL)
         public void testPaymentInfo() {
             //Принимаем куки
             WebElement buttonCookie = driver.findElement(By.xpath("//button[@id='cookie-agree']"));
@@ -91,7 +94,7 @@ public class OnlinePaymentBlockTests {
             continueButton.click();
 
             //Переключение на фрейм
-            WebElement framePayment = driver.findElement(By.xpath("/html/body/div[8]/div/iframe"));
+            WebElement framePayment = driver.findElement(By.xpath("//iframe[@class='bepaid-iframe']"));
             driver.switchTo().frame(framePayment);
 
             //Проверка корректности суммы

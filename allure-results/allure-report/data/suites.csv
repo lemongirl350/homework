@@ -1,0 +1,3 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Thu May 23 01:09:42 YEKT 2024","Thu May 23 01:09:50 YEKT 2024","8304","","OnlinePaymentBlockTests","","OnlinePaymentBlockTests","testTextEmptyFields","Проверка надписей в незаполненных полях",""
+"passed","Thu May 23 01:09:50 YEKT 2024","Thu May 23 01:10:01 YEKT 2024","11095","","OnlinePaymentBlockTests","","OnlinePaymentBlockTests","testPaymentInfo","Проверка оплаты за Услуги связи",""
